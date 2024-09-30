@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Pendientes</title>
+    <link rel="stylesheet" href="./asstes/style.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Control de Tareas</h1>
+
+        <!-- Sección para agregar tareas -->
+        <div class="input-container">
+            <input type="text" id="nuevaTareaInput" placeholder="Escribe una nueva tarea">
+            <button id="agregarBtn">Agregar Tarea</button>
+        </div>
+
+        <!-- Contador de tareas -->
+        <div class="resumen-tareas">
+            <p>Total: <span id="totalTareas">0</span></p>
+            <p>Realizadas: <span id="tareasRealizadas">0</span></p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaTareas">
+                    <!-- Aquí van las tareas -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Lista de tareas -->
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="./asstes/script.js"></script> <!-- Enlace al archivo JS -->
+</body>
+</html>
